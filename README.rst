@@ -1,3 +1,10 @@
+======
+htmlcompressor
+======
+
+
+.. image:: https://travis-ci.org/sxslex/htmlcompressor.svg?branch=master
+    :target: https://travis-ci.org/sxslex/htmlcompressor
 
 
 Compress HTML CSS and Java Script of a page.
