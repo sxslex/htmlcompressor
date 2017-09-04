@@ -3,11 +3,14 @@ htmlcompressor
 ======
 
 
-.. image:: https://travis-ci.org/sxslex/htmlcompressor.svg?branch=master
-    :target: https://travis-ci.org/sxslex/htmlcompressor
+.. image:: https://img.shields.io/badge/pypi-v1.0.2-orange.svg
+    :target: https://pypi.python.org/pypi/htmlcompressor
 
 .. image:: https://img.shields.io/badge/python-2.6%2C%202.7%2C%203.3+-blue.svg
     :target: https://travis-ci.org/sxslex/htmlcompressor.svg?branch=master
+
+.. image:: https://travis-ci.org/sxslex/htmlcompressor.svg?branch=master
+    :target: https://travis-ci.org/sxslex/htmlcompressor
 
 .. image:: https://img.shields.io/badge/license--blue.svg
     :target: https://github.com/sxslex/htmlcompressor/blob/master/LICENSE

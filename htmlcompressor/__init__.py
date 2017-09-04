@@ -1,5 +1,6 @@
 # -*- coding: UTF-8 -*-
 
+from __future__ import unicode_literals
 from htmlcompressor import htmlmin
 import warnings
 import jsmin
@@ -84,11 +85,6 @@ def compress(
     If you are going to be minifying multiple HTML documents, each with the same
     settings, consider using :class:`.Minifier`.
     """
-    pos = html_input.find('<script>')
-    pos_end = html_input.find('</script>')
-    if pos > -1 and pos_end == -1:
-        warnings.warn("script tag was not closed", Warning)
-        return html_input
     html_new = htmlmin.minify(
         input=html_input,
         remove_comments=remove_comments,
@@ -101,6 +97,9 @@ def compress(
         pre_tags=pre_tags if pre_tags is not None else ('pre', 'textarea'),
         pre_attr=pre_attr
     )
+    if len(html_new.split('<script')) != len(html_new.split('</script>')):
+        warnings.warn("script tag was not closed", Warning)
+        return html_input
     if clear_type_javascript:
         html_new = html_new.replace(' type=text/javascript', '')
     if clear_type_css:
