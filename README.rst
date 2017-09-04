@@ -38,13 +38,6 @@ Usage
     '<html><head><title>Test</title><script>alert(1);alert(2)</script></head><body><style>.class{display:none}</style></body></html>'
 
 
-
-Compatibility
-=============
-
-Tested under Python 2.6, 2.7 and 3.3+
-
-
 Installation
 ============
 
@@ -52,7 +45,7 @@ Use ``pip`` or ``easy_install``:
 
 .. code::
 
-    $ pip install htmlcompressor
+    $ pip install git+https://github.com/sxslex/htmlcompressor.git
 
 
 Development
