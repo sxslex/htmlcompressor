@@ -97,7 +97,7 @@ def compress(
         pre_tags=pre_tags if pre_tags is not None else ('pre', 'textarea'),
         pre_attr=pre_attr
     )
-    if len(html_input.split('<script>')) != len(html_input.split('</script>')):
+    if len(html_new.split('<script')) != len(html_new.split('</script>')):
         warnings.warn("script tag was not closed", Warning)
         return html_input
     if clear_type_javascript:
