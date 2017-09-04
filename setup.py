@@ -2,9 +2,11 @@ from setuptools import setup
 
 setup(
     name='htmlcompressor',
-    version='1.0.0',
+    version='1.0.1',
     url='https://github.com/sxslex/htmlcompressor',
-    download_url='https://github.com/sxslex/htmlcompressor/archive/v1.0.tar.gz',
+    download_url=(
+        'https://github.com/sxslex/htmlcompressor/archive/v1.0.1.tar.gz'
+    ),
     author='SleX',
     author_email='sx.slex@gmail.com',
     description='Compress HTML CSS and Java Script of a page.',
