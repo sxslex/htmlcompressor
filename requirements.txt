@@ -1,0 +1,4 @@
+csscompressor
+htmlmin
+pytest
+jsmin
