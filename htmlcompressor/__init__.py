@@ -26,7 +26,7 @@ def compress(
         minify_css=True,
         join_script_inline=True
 ):
-    """Minifies HTML in one shot.
+    """Compress HTML CSS and Java Script of a page.
 
     :param html_input: A string containing the HTML to be minified.
     :param remove_comments: Remove comments found in HTML. Individual comments

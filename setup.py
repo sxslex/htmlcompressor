@@ -19,5 +19,10 @@ setup(
         'Operating System :: OS Independent',
         'Programming Language :: Python :: 2.6, 2.7 and 3.3+',
         'Topic :: Software Development :: Libraries :: Python Modules',
-    ]
+    ],
+    entry_points={
+        'console_scripts': [
+            'htmlcompressor = htmlcompressor.cli:cli',
+        ],
+    },
 )
