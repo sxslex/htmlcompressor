@@ -5,7 +5,7 @@ setup(
     version='1.0.2',
     url='https://github.com/sxslex/htmlcompressor',
     download_url=(
-        'https://github.com/sxslex/htmlcompressor/archive/v1.0.1.tar.gz'
+        'https://github.com/sxslex/htmlcompressor/archive/v1.0.2.tar.gz'
     ),
     author='SleX',
     author_email='sx.slex@gmail.com',
