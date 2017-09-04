@@ -1,6 +1,6 @@
 # -*- coding: UTF-8 -*-
 
-import htmlmin
+from htmlcompressor import htmlmin
 import jsmin
 
 import csscompressor

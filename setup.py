@@ -8,7 +8,7 @@ setup(
     author_email='sx.slex@gmail.com',
     description='Compress HTML CSS and Java Script of a page.',
     keywords=['html', 'css', 'javascript', 'compressor', 'minify'],
-    packages=['htmlcompressor', 'tests'],
+    packages=['htmlcompressor', 'htmlcompressor.htmlmin'],
     install_requires=['htmlmin', 'jsmin', 'csscompressor'],
     classifiers=[
         'Development Status :: 1 - Alpha',
@@ -17,7 +17,7 @@ setup(
         'License :: OSI Approved :: GNU General Public License (GPL)',
         'Natural Language :: English',
         'Operating System :: OS Independent',
-        'Programming Language :: Python :: 2.7, 3.5',
+        'Programming Language :: Python :: 2.6, 2.7 and 3.3+',
         'Topic :: Software Development :: Libraries :: Python Modules',
     ]
 )
