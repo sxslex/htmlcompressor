@@ -7,7 +7,7 @@ htmlcompressor
     :target: https://travis-ci.org/sxslex/htmlcompressor
 
 .. image:: https://img.shields.io/badge/python-2.6%2C%202.7%2C%203.4%2C%203.5%2C%203.6-blue.svg
-    :target:
+    :target: https://travis-ci.org/sxslex/htmlcompressor.svg?branch=master
 
 .. image:: https://img.shields.io/badge/license--blue.svg
     :target: https://github.com/sxslex/htmlcompressor/blob/master/LICENSE
