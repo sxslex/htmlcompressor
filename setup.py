@@ -22,7 +22,7 @@ setup(
     ],
     entry_points={
         'console_scripts': [
-            'htmlcompressor = htmlcompressor.cli:cli',
+            'htmlcompressor = htmlcompressor.cli:compress',
         ],
     },
 )
