@@ -15,13 +15,14 @@ Usage
     ...    <head>
     ...        <title>  Test  </title>
     ...        <script type="text/javascript">  alert(1)  </script>
+    ...        <script type="text/javascript">  alert(2);  </script>
     ...    </head>
     ...     <body>
     ...         <style type="text/css">  .class {   display:  none; } </style>
     ...     </body>
     ...</html>
     ... ''')
-    '<html><head><title>Test</title><script>alert(1)</script></head><body><style>.class{display:none}</style></body></html>'
+    '<html><head><title>Test</title><script>alert(1);alert(2)</script></head><body><style>.class{display:none}</style></body></html>'
 
 
 
