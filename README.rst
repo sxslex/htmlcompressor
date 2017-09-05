@@ -58,6 +58,7 @@ Usage
     ...     </body>
     ...</html>
     ... '''
+    >>> index()
     '<html><head><title>Test</title><script>alert(1);alert(2)</script></head><body><style>.class{display:none}</style></body></html>'
 
 
@@ -68,7 +69,7 @@ Use ``pip`` or ``easy_install``:
 
 .. code::
 
-    $ pip install git+https://github.com/sxslex/htmlcompressor.git
+    $ pip install htmlcompressor
 
 
 Development
