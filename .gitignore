@@ -6,6 +6,7 @@
 .directory
 .env
 .idea
+.cache
 nohup.out
 .tox
 MANIFEST
