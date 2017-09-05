@@ -3,7 +3,7 @@ htmlcompressor
 ======
 
 
-.. image:: https://img.shields.io/badge/pypi-v1.0.2-orange.svg
+.. image:: https://img.shields.io/badge/pypi-v1.1-orange.svg
     :target: https://pypi.python.org/pypi/htmlcompressor
 
 .. image:: https://img.shields.io/badge/python-2.6%2C%202.7%2C%203.3+-blue.svg
@@ -38,6 +38,26 @@ Usage
     ...     </body>
     ...</html>
     ... ''')
+    '<html><head><title>Test</title><script>alert(1);alert(2)</script></head><body><style>.class{display:none}</style></body></html>'
+
+
+.. code:: pycon
+
+    >>> import htmlcompressor
+    >>> @htmlcompressor.decorator()
+    >>> def index():
+    >>>     return '''
+    ...<html>
+    ...    <head>
+    ...        <title>  Test  </title>
+    ...        <script type="text/javascript">  alert(1)  </script>
+    ...        <script type="text/javascript">  alert(2);  </script>
+    ...    </head>
+    ...     <body>
+    ...         <style type="text/css">  .class {   display:  none; } </style>
+    ...     </body>
+    ...</html>
+    ... '''
     '<html><head><title>Test</title><script>alert(1);alert(2)</script></head><body><style>.class{display:none}</style></body></html>'
 
 

@@ -1,15 +1,8 @@
-# coding: utf-8
+# -*- coding: utf-8 -*-
 
 import os
 import click
 import htmlcompressor
-
-
-# @click.group()
-# @click.version_option(
-#     version=htmlcompressor.__version__, prog_name='htmlcompressor')
-# def cli():
-#     pass
 
 
 @click.command(help='compress html `source_or_path`')

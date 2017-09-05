@@ -1,11 +1,13 @@
+# -*- coding: utf-8 -*-
+
 from setuptools import setup
 
 setup(
     name='htmlcompressor',
-    version='1.0.2',
+    version='1.1',
     url='https://github.com/sxslex/htmlcompressor',
     download_url=(
-        'https://github.com/sxslex/htmlcompressor/archive/v1.0.2.tar.gz'
+        'https://github.com/sxslex/htmlcompressor/archive/v1.1.tar.gz'
     ),
     author='SleX',
     author_email='sx.slex@gmail.com',

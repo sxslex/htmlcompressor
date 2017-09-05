@@ -1,4 +1,4 @@
-# -*- coding: UTF-8 -*-
+# -*- coding: utf-8 -*-
 
 from __future__ import unicode_literals
 from htmlcompressor import htmlmin
@@ -8,25 +8,25 @@ import jsmin
 import csscompressor
 
 
-__version__ = '0.1.0-dev'
+__version__ = '1.1'
 
 
 def compress(
-        html_input,
-        remove_comments=True,
-        remove_empty_space=True,
-        remove_all_empty_space=True,
-        reduce_empty_attributes=True,
-        reduce_boolean_attributes=True,
-        remove_optional_attribute_quotes=True,
-        keep_pre=False,
-        pre_tags=None,
-        pre_attr='pre',
-        clear_type_javascript=True,
-        clear_type_css=True,
-        minify_js=True,
-        minify_css=True,
-        join_script_inline=True
+    html_input,
+    remove_comments=True,
+    remove_empty_space=True,
+    remove_all_empty_space=True,
+    reduce_empty_attributes=True,
+    reduce_boolean_attributes=True,
+    remove_optional_attribute_quotes=True,
+    keep_pre=False,
+    pre_tags=None,
+    pre_attr='pre',
+    clear_type_javascript=True,
+    clear_type_css=True,
+    minify_js=True,
+    minify_css=True,
+    join_script_inline=True
 ):
     """Compress HTML CSS and Java Script of a page.
 
@@ -161,3 +161,15 @@ def compress(
     if minify_js:
         html_new = html_new.replace(';</script>', '</script>')
     return html_new
+
+
+def decorator(*xargs, **xkargs):
+    def wrap(f):
+        def wrapped_f(*args, **kargs):
+            resp = f(*args, **kargs)
+            try:
+                return compress(resp, *xargs, **xkargs)
+            except:
+                return resp
+        return wrapped_f
+    return wrap
